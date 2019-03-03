@@ -11,9 +11,4 @@ class SecretsController < ApplicationController
 	 #  end
 	end
 
-	private
-
-	def require_login
-   	 return redirect_to '/sessions/new' unless session.include? :name
-  	end
 end
