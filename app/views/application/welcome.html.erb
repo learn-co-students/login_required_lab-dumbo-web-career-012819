@@ -1,0 +1,9 @@
+<h1><%= "Hi, #{session[:name]}." %></h1>
+
+<%= form_tag logout_path, method: "destroy" do %>
+  <%= submit_tag "logout" %>
+<% end %>
+
+>>>>>>>>>>>>>>
+<%= link_to "Your Secrets", show_path(session[:name]) %>
+<<<<<<<<<<<<<<
